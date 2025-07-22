@@ -1,0 +1,225 @@
+body {
+  font-family: var(
+    --font-lato
+  ); /* Changed to Lato as a general body font based on available fonts */
+  line-height: var(--line-height-base);
+  color: var(--color-text); /* Using your defined text color */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat); /* Using Montserrat for titles */
+  color: var(--color-text); /* Using your defined text color, can be adjusted */
+  font-weight: var(--font-weight-bold); /* Default bold for headings */
+}
+
+/* Adjustments for specific heading levels if needed */
+h1 {
+  font-family: var(
+    --font-public
+  ); /* Using Montserrat Alternates for the main hero title */
+  font-weight: var(--font-weight-bold);
+}
+
+/* Ajustes para la navegación */
+.navbar-brand {
+  font-weight: var(--font-weight-bold); /* Using variable */
+  font-family: var(--font-montserrat); /* Applied font to brand */
+}
+
+.nav-link {
+  font-weight: var(--font-weight-semi-bold); /* Using variable */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-green) !important;
+}
+
+.nav-link.active {
+  color: var(--color-green) !important;
+  border-bottom: 2px solid var(--color-green);
+  background-color: white;
+}
+
+a.btn.btn-primary .bi-linkedin  {
+  color: white !important;
+}
+a.btn.btn-primary:hover .bi-linkedin {
+  color: var(--color-green) !important;
+}
+
+/* Secciones generales */
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+/* Home Section Specifics */
+.hero-section {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../img/iso-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* Service Cards */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* Estilos de formulario */
+.form-control-lg {
+  border-radius: 0.5rem;
+}
+
+/* Reafirmamos los estilos base del botón primario */
+.btn-primary {
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+  color: white; /* Asegúrate de que el texto sea blanco por defecto */
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: var(--color-green) !important;
+  border-color: var(--color-green) !important;
+  color: white !important; /* Color de texto que contraste con beige */
+  box-shadow: none !important;
+  transform: translateY(1px); /* Opcional: efecto de presión */
+}
+
+/* Botón Outline Primario */
+.btn-outline-primary {
+  color: var(--color-green);
+  border-color: var(--color-green);
+  background-color: transparent; /* Asegúrate de que sea transparente por defecto */
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-green);
+  border-color: var(
+    --color-green
+  ); /* El borde también debería ser mostaza al hover */
+  color: white;
+}
+/* Icon colors */
+.bi {
+  color: var(--color-green); /* Applies to all Bootstrap Icons by default */
+}
+
+/* Logo y Nombre */
+.nombre {
+  width: auto;
+  height: 80px;
+}
+
+.foto {
+  border-radius: 50%;
+}
+
+/* Mensajes del formulario PHP */
+#formMessages {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+#formMessages.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+#formMessages.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Animation */
+.animate-on-scroll {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
+
+.animate-on-scroll.animate__animated {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Footer adjustments */
+footer {
+  background-color: var(--color-beige); /* Aplica el color de fondo */
+  color: var(--color-text); /* Aplica el color del texto principal */
+}
+
+footer .text-white-50 {
+  /* Si sigues usando esta clase de Bootstrap, ajusta si es necesario */
+  color: var(
+    --color-mostaza
+  ) !important; /* Para que los enlaces hereden el color */
+}
+
+footer a {
+  color: var(
+    --color-mostaza
+  ); /* Asegura que los enlaces tengan el color deseado */
+}
+
+footer a:hover {
+  color: var(
+    --color-oliva
+  ); /* O el color de hover que desees para los enlaces del footer */
+}
+
+/* Estilo para el bloque "Created with love" */
+/* Este ya usa las variables en el HTML inline style, pero puedes moverlo aquí */
+/*
+.aberto-credit-block {
+  background-color: var(--footer-bg-color);
+  color: var(--color-text); // O un color que contraste bien con footer-bg-color
+}
+*/
+
+/* Estilo para el favicon/imagen de Aberto */
+.aberto-logo {
+  height: 2em; /* Ajusta el tamaño según tu imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-left: 0.5rem; /* Pequeño margen a la derecha */
+}
+/* Additional utility if you want to use the other colors */
+.text-green {
+  color: var(--color-green) !important;
+}
+
+.bg-oliva {
+  background-color: var(--color-oliva) !important;
+}
+
+.text-beige {
+  color: var(--color-beige) !important;
+}

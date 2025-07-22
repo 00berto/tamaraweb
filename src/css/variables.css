@@ -1,0 +1,28 @@
+:root {
+  /* Color palette from previous request */
+  --color-green: #669933; /* Vibrant, somewhat muted green */
+  --color-text: #1a1a1a; /* Very dark gray, almost black */
+  --color-dark-gray: #303030; /* Dark gray/black */
+  --color-beige: #d2b48c; /* Light, warm beige */
+  --color-oliva: #c8c8a6; /* Light, cool beige/pale olive */
+  --color-mostaza: #d1a72d; /* Muted gold/mustard yellow */
+
+  /* Bootstrap Primary Color Override */
+  /* This ensures Bootstrap's .btn-primary, .text-primary, etc. use your mustard color */
+  --bs-primary: var(--color-mostaza);
+  --bs-primary-rgb: 209, 167, 45; /* RGB value for #D1A72D - useful for Bootstrap's opacity functions */
+
+  /* Font family variables */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-mont-alternative: "Montserrat Alternates", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-public: "Public Sans", sans-serif;
+
+  /* Common typographic variables */
+  --font-size-base: 1rem; /* 16px default */
+  --line-height-base: 1.6;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}
